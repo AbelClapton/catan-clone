@@ -5,12 +5,29 @@
 // 1 Number
 
 <script setup>
-import { ref } from 'vue'
+defineProps({
+  spots:  {
+    type: Array,
+    default() {
+      return []
+    }
+  },
+  resource: Object,
+  diceRoll: {
+    type: [Number, Null],
+    default: Null,
+  },
+  hasThief: {
+    type: Boolean,
+    default: false,
+  }
+})
 
+defineEmits(['diceMatch'])
 </script>
 
 <template>
-  <div class="hexagon"></div>
+  <div class="hexagon" />
 </template>
 
 <style scoped>

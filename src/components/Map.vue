@@ -3,13 +3,9 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import Hexagon from '@/components/Hexagon.vue'
-import Spot from '@/components/BaseSpot.vue'
+import Spot from '@/components/Spot.vue'
 
-// lazy for i in range
-const n = ref([]) 
-  
 const hexMap = ref([3,4,5,4,3])
-const spotMap
 
 </script>
 
